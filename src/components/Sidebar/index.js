@@ -1,15 +1,16 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoR from '../../assets/images/Raman_Logo.png'
+import LogoSubtitle from '../../assets/images/Raman-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             {/* <img src={LogoS} alt='logo' /> */}
-            <img src={LogoS} alt="logo" />
+            <img src={LogoR} alt="logo" />
             <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
         </Link>
         <nav>
@@ -23,6 +24,23 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/raman-zatsarenko/">
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"></FontAwesomeIcon>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://github.com/rzv09">
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e"></FontAwesomeIcon>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://t.me/rzzzz09">
+                <FontAwesomeIcon icon={faTelegram} color="#4d4d4e"></FontAwesomeIcon>
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
