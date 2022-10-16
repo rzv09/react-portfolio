@@ -11,16 +11,16 @@ const Sidebar = () => (
         <Link className='logo' to='/'>
             {/* <img src={LogoS} alt='logo' /> */}
             <img src={LogoR} alt="logo" />
-            <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
+            <img className='sub-logo' src={LogoSubtitle} alt='raman' />
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink exact="true" activeclassname="active" className="home" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+            <NavLink  activeclassname="active" className="about-link" to="/about">
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+            <NavLink  activeclassname="active" className="contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>
